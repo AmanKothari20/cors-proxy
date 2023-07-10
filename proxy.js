@@ -6,6 +6,7 @@ const express = require('express'),
     RSSParser = require('rss-parser')
     app = express();
 
+
 app.use(cors());
 app.get("/rss", async (req, res) => {
     let parser = new RSSParser();
